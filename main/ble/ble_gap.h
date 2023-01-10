@@ -7,12 +7,19 @@ extern "C" {
 
 #include <merry/object/object.h>
 
+extern int BLE_GAP_EVENT_1;
+
+typedef struct ble_event_set_adv_data_complete
+{
+    ble_event base;
+} ble_event_set_adv_data_complete;
+
 typedef struct ble_gap
 {
     object base;
-
-    void(*handle)();
 } ble_gap;
+
+ble_gap *ble_gap_create();
 
 #ifdef __cplusplus
 }

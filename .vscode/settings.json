@@ -7,7 +7,22 @@
     "esp_log.h": "c",
     "stdio.h": "c",
     "string": "c",
-    "string_buffer.h": "c"
+    "string_buffer.h": "c",
+    "array": "c",
+    "*.tcc": "c",
+    "memory": "c",
+    "future": "c",
+    "istream": "c",
+    "functional": "c",
+    "tuple": "c",
+    "utility": "c",
+    "array.h": "c",
+    "bitset": "c",
+    "string_view": "c",
+    "initializer_list": "c",
+    "regex": "c",
+    "esp_bt.h": "c",
+    "nvs_flash.h": "c"
   },
   "idf.adapterTargetName": "esp32"
 }

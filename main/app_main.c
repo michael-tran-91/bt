@@ -19,22 +19,16 @@
 
 #define GATTS_TAG "GATTS_DEMO"
 
-#include "object/object.h"
-#include "object/string_buffer.h"
-#include "object/array.h"
+#include <merry/object/string_buffer.h>
+#include "ble/ble_context.h"
 
 void app_main()
 {
     string_buffer *obj = string_buffer_create();
-    string_buffer_cat(obj, "Hello World");
-    string_buffer_cat(obj, " 1234");
-
-    array *a = array_create();
-    array_push_back(a, &obj->base);
-    release(&obj->base);
+    obj->cat(obj, "Hello world 0123");
 
     printf("%s\n", obj->ptr);
-    release(&a->base);
+    RELEASE(&obj->base);
 
     esp_err_t ret;
 

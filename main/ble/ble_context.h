@@ -5,8 +5,7 @@
 extern "C" {
 #endif
 
-#include "../object/object.h"
-#include "ble_gap.h"
+#include <merry/object/object.h>
 
 typedef struct ble_context
 {

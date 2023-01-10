@@ -5,17 +5,13 @@
 extern "C" {
 #endif
 
-#include "../object/object.h"
-
-typedef struct ble_gap_if
-{
-    
-} ble_gap_if;
+#include <merry/object/object.h>
 
 typedef struct ble_gap
 {
     object base;
-    
+
+    void(*handle)();
 } ble_gap;
 
 #ifdef __cplusplus

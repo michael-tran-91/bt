@@ -6,7 +6,8 @@
     "event_groups.h": "c",
     "esp_log.h": "c",
     "stdio.h": "c",
-    "string": "c"
+    "string": "c",
+    "string_buffer.h": "c"
   },
   "idf.adapterTargetName": "esp32"
 }
